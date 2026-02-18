@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-200/60 dark:border-slate-700/60 bg-white/40 dark:bg-slate-900/40 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col items-center justify-center gap-6">
           <div className="flex items-center gap-3">
             <span className="text-2xl font-black text-slate-900 dark:text-white">MK.</span>
             <span className="text-sm text-slate-500 dark:text-slate-400">

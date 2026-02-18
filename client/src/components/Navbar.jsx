@@ -62,7 +62,7 @@ export default function Navbar({ theme, toggleTheme }) {
           className="text-2xl font-black tracking-tight text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md px-1"
           aria-label="Go to top"
         >
-          M.
+          MK.
         </button>
 
         <div className="hidden md:flex items-center gap-1">
