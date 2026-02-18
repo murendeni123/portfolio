@@ -39,6 +39,12 @@ export default function Hero() {
               </span>
             </motion.div>
 
+            <motion.div variants={itemVariants} className="mb-2">
+              <p className="text-base sm:text-lg font-medium text-slate-500 dark:text-slate-400 tracking-wide">
+                Welcome to my portfolio, I am
+              </p>
+            </motion.div>
+
             <motion.h1
               variants={itemVariants}
               className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-900 dark:text-white leading-[1.05] mb-5"
