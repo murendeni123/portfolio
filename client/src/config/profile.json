@@ -1,0 +1,127 @@
+{
+  "fullName": "Murendeni Kwinda",
+  "role": "Software Developer",
+  "tagline": "I build modern, reliable web applications with clean architecture, strong attention to UX, and a security-aware mindset — using AI tools to accelerate delivery while maintaining quality.",
+  "location": "Gauteng, South Africa",
+  "email": "kwindamurendeni11@gmail.com",
+  "phone": "065 966 2508",
+  "phoneCall": "tel:0659662508",
+  "phoneWhatsApp": "https://wa.me/27659662508",
+  "linkedInUrl": "https://www.linkedin.com/in/murendeni-kwinda-1445a0283",
+  "gitHubUrl": "https://github.com/murendeni",
+  "profileImage": "/images/profile.jpg",
+  "dmsLiveLink": "",
+
+  "strengths": [
+    "Systems thinking & Architecture",
+    "Multi-portal & Role-based access control",
+    "Multi-tenant system awareness",
+    "Security-aware development mindset",
+    "End-to-end project delivery",
+    "AI-augmented productivity"
+  ],
+
+  "skills": {
+    "Backend": ["ASP.NET Core", "C#", "Node.js", "Express"],
+    "Frontend": ["React", "Razor Pages", "JavaScript", "HTML5", "CSS3"],
+    "Databases": ["Supabase", "PostgreSQL", "SQL Server"],
+    "Security": ["Auth & Roles", "Tenant Isolation", "Secure Flows"]
+  },
+
+  "tooling": {
+    "Tools": ["Visual Studio", "VS Code", "Git", "AI Assistants"],
+    "Cloud & Hosting": ["Render", "Netlify", "Vercel"]
+  },
+
+  "professionalGrowth": [
+    {
+      "title": "Modern Web Architectures",
+      "description": "Focusing on scalable cloud-native solutions and clean architecture patterns."
+    },
+    {
+      "title": "Security & Data Integrity",
+      "description": "Deepening expertise in multi-tenant isolation and secure authentication flows."
+    },
+    {
+      "title": "AI-Driven Development",
+      "description": "Integrating advanced AI tools to streamline debugging and accelerate deployment cycles."
+    }
+  ],
+
+  "education": [
+    {
+      "year": "2023",
+      "title": "Programming Foundations",
+      "institution": "CTU Training Solutions, Roodepoort",
+      "description": "Built a strong base in programming fundamentals, problem-solving, and structured thinking."
+    },
+    {
+      "year": "2024",
+      "title": "Core Software Development",
+      "institution": "CTU Training Solutions",
+      "description": "Developed real-world software development skills and started using AI tools to improve productivity, code quality, and iteration speed."
+    },
+    {
+      "year": "2025",
+      "title": "Cybersecurity",
+      "institution": "CTU Training Solutions",
+      "description": "Strengthened a security-first mindset — learning how to reduce risk, avoid common vulnerabilities, and use AI responsibly without introducing security gaps."
+    },
+    {
+      "year": "After Graduation",
+      "title": "Production System Launch",
+      "institution": "",
+      "description": "Built my first production-ready system: GREENSTEM Disciplinary Management System, which is currently live and actively used.",
+      "highlight": true
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "dms",
+      "title": "DMS — Discipline Management System",
+      "summary": "A school-focused platform for structured incident tracking and parent communication.",
+      "coverImage": "/images/dms1.png",
+      "featured": true,
+      "role": "Full-Stack Developer",
+      "stack": ["React", "Node.js", "Supabase", "PostgreSQL"],
+      "description": "A robust institutional management platform providing structured incident tracking, merit recording, and parent communication for schools. Built with a security-aware, multi-portal architecture.",
+      "features": [
+        "Multi-portal access: Parents, Teachers, and Admin each have dedicated dashboards",
+        "Incident & merit tracking with full audit trail",
+        "Automated parent notifications and communication logs",
+        "Role-based access control with tenant isolation",
+        "Reporting and analytics for school administration",
+        "Secure authentication and session management"
+      ],
+      "gallery": [
+        "/images/dms1.png",
+        "/images/dms2.png",
+        "/images/dms3.png",
+        "/images/dms4.png",
+        "/images/dms5.png"
+      ]
+    },
+    {
+      "id": "coming-1",
+      "title": "Project Coming Soon",
+      "summary": "Innovation in progress. Stay tuned for updates.",
+      "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
+      "featured": false
+    },
+    {
+      "id": "coming-2",
+      "title": "Project Coming Soon",
+      "summary": "Innovation in progress. Stay tuned for updates.",
+      "coverImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop",
+      "featured": false
+    },
+    {
+      "id": "coming-3",
+      "title": "Project Coming Soon",
+      "summary": "Innovation in progress. Stay tuned for updates.",
+      "coverImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop",
+      "featured": false
+    }
+  ]
+}

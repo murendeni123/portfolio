@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased overflow-x-hidden;
+  }
+
+  * {
+    @apply box-border;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 dark:bg-slate-800/70 backdrop-blur-md border border-white/40 dark:border-slate-700/40;
+  }
+
+  .glass-card {
+    @apply bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm border border-white/50 dark:border-slate-700/50 shadow-lg shadow-black/5 dark:shadow-black/20;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-20 lg:py-28;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .animated-bg {
+    --c1: #f0f4ff;
+    --c2: #e0eaff;
+    --c3: #e8f4fd;
+    --c4: #ede9fe;
+    background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c1) 100%);
+    background-size: 300% 300%;
+    animation: gradientShift 18s ease-in-out infinite, coolHueShift 24s ease-in-out infinite;
+  }
+
+  .dark .animated-bg {
+    --c1: #0d1424;
+    --c2: #0c1a36;
+    --c3: #0a1628;
+    --c4: #100d2e;
+    background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 25%, var(--c3) 50%, var(--c4) 75%, var(--c1) 100%);
+    background-size: 300% 300%;
+    animation: gradientShift 18s ease-in-out infinite, coolHueShiftDark 24s ease-in-out infinite;
+  }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  25%  { background-position: 50% 0%; }
+  50%  { background-position: 100% 50%; }
+  75%  { background-position: 50% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes coolHueShift {
+  0%   { --c1: #f0f4ff; --c2: #e0eaff; --c3: #e8f4fd; --c4: #ede9fe; --mk: #6366f1; }
+  20%  { --c1: #e0f2fe; --c2: #bae6fd; --c3: #e0f7ff; --c4: #dbeafe; --mk: #0ea5e9; }
+  40%  { --c1: #ecfeff; --c2: #cffafe; --c3: #e0f2fe; --c4: #e0eaff; --mk: #06b6d4; }
+  60%  { --c1: #eef2ff; --c2: #e0e7ff; --c3: #ede9fe; --c4: #f0f4ff; --mk: #818cf8; }
+  80%  { --c1: #f5f3ff; --c2: #ede9fe; --c3: #e0eaff; --c4: #e8f4fd; --mk: #a78bfa; }
+  100% { --c1: #f0f4ff; --c2: #e0eaff; --c3: #e8f4fd; --c4: #ede9fe; --mk: #6366f1; }
+}
+
+@keyframes coolHueShiftDark {
+  0%   { --c1: #0d1424; --c2: #0c1a36; --c3: #0a1628; --c4: #100d2e; --mk: #818cf8; }
+  20%  { --c1: #082032; --c2: #0c2340; --c3: #071e30; --c4: #0d1a38; --mk: #38bdf8; }
+  40%  { --c1: #071e2e; --c2: #0a2535; --c3: #082032; --c4: #0c1a36; --mk: #22d3ee; }
+  60%  { --c1: #0e0d2e; --c2: #130d38; --c3: #100d2e; --c4: #0d1424; --mk: #a5b4fc; }
+  80%  { --c1: #130d38; --c2: #1a0d40; --c3: #0e0d2e; --c4: #0c1a36; --mk: #c4b5fd; }
+  100% { --c1: #0d1424; --c2: #0c1a36; --c3: #0a1628; --c4: #100d2e; --mk: #818cf8; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
