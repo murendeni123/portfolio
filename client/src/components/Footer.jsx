@@ -9,9 +9,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl font-black text-slate-900 dark:text-white">M.</span>
+            <span className="text-2xl font-black text-slate-900 dark:text-white">MK.</span>
             <span className="text-sm text-slate-500 dark:text-slate-400">
-              &copy; {year} {profile.fullName}. Built with React + Tailwind.
+              &copy; {year} {profile.fullName}.portfolio.
             </span>
           </div>
 
@@ -31,15 +31,6 @@ export default function Footer() {
               className="p-2.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <Linkedin size={18} />
-            </a>
-            <a
-              href={profile.gitHubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className="p-2.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <Github size={18} />
             </a>
           </div>
         </div>
